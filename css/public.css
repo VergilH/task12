@@ -1,0 +1,45 @@
+p {
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  outline: none; }
+  a:hover {
+    text-decoration: none;
+    outline: none; }
+  a:focus {
+    text-decoration: none;
+    outline: none; }
+
+button {
+  border: none;
+  outline: none; }
+  button:hover {
+    border: none;
+    outline: none; }
+  button:focus {
+    border: none;
+    outline: none; }
+
+.red-text {
+  color: #e63b0e; }
+
+.blue-text {
+  color: #5fc0cd; }
+
+.grey-text {
+  color: #999; }
+
+.white-text {
+  color: #fff; }
+
+.black-text {
+  color: #333; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+/*# sourceMappingURL=public.css.map */
