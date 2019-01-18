@@ -1,4 +1,23 @@
+/*
+#定义混合器  使用
+@mixin borderRadius {
+  border-radius: 5px;
+  -webkit-border-radius；5px；
+  -moz-border-radius:5px;
+}
+
+#通过@include来使用这个混合器
+h1{
+  font-size: 28px;color: #333;
+  @include borderRadius;
+}
+*/
+
 @charset 'utf-8';// 不加这行，文件中有中文时会报错
+
+
+//变量
+$width: 100%;
 
 $blue : #5fc0cd;
 
@@ -6,13 +25,24 @@ $red : #e63b0e;
 
 $grey : #999;
 
+$frenchgrey : #e1e5e7;
+
 $white : #fff;
 
 $black : #333;
 
-$font-size : 36px;
+$font-size : 18px;
+
+//混合器
+@mixin greyborder-top {
+	border-top: 1px solid $frenchgrey;
+}
+@mixin greyborder-bot {
+	border-bottom: 1px solid $frenchgrey;
+}
 
 p {
+	display: inline-block;
 	margin: 0;
 }
 
@@ -30,18 +60,12 @@ a {
 }
 
 button {
+	padding: 0;
 	border: none;
 	outline: none;
-	&:hover {
-		border: none;
-		outline: none;
-	}
-	&:focus {
-		border: none;
-		outline: none;
-	}
 }
 
+//字体颜色
 .red-text {
 	color: $red;
 }
@@ -62,9 +86,35 @@ button {
 	color: $black;
 }
 
+//字体大小 
+.font-lg {
+	margin: 20px 0 10px;
+    font-size: $font-size;
+}
+.font-nm {
+    font-size: $font-size - 2;
+}
+.font-sm {
+    font-size: $font-size - 4;
+}
+
+//浮动
 .left {
 	float: left;
 }
 .right {
 	float: right;
+}
+
+
+body {
+	margin: 0;
+	background-color: $white;
+}
+
+header {
+	width: $width;
+	height: 42.5px;
+	text-align: center;
+	background: $blue;
 }
