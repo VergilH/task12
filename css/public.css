@@ -32,6 +32,12 @@ button {
   border: none;
   outline: none; }
 
+.border-right {
+  border-right: 1px solid #e1e5e7; }
+
+.border-left {
+  border-left: 1px solid #e1e5e7; }
+
 .red-text {
   color: #e63b0e; }
 
@@ -46,6 +52,9 @@ button {
 
 .black-text {
   color: #333; }
+
+.orange-text {
+  color: #e63b0e; }
 
 .font-lg {
   margin: 20px 0 10px;
@@ -62,6 +71,9 @@ button {
 
 .right {
   float: right; }
+
+.clearfloat {
+  clear: both; }
 
 body {
   margin: 0;

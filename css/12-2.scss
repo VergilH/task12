@@ -45,6 +45,7 @@ menu {
 	margin: 0;
 	padding: 0;
 	width: $width;
+	height: 40px;
 	letter-spacing: -5px;
 	//下拉菜单
 	ul {
@@ -94,7 +95,7 @@ menu {
    			right: 6px;
     		width: 1px;
  			height: 0;
- 			border-width: 6px;
+ 			border-width: 4px;
  			border-style: solid;
  			border-color: #afbac0 transparent transparent transparent;
     	}
@@ -102,35 +103,52 @@ menu {
 }
 
 main {
+	.main-content {
+		padding: 15px;
+		@include greyborder-bot;
+		box-sizing: border-box;
+	}
 	span {
 		position: relative;
+	}
+	.data {
+		display: inline-block;
+		margin: 8px 0 8px 25px;
 	}
 	.data-icon {
 		&:before {
 			content:'';
 			display: inline-block;
+			padding-right: 12px;
     		background:url(../images/data.png) no-repeat;
     		background-size:14px;
     		width:14px;
     		height:16px;
+    		vertical-align: middle;
 		}
 	}
 	.g-position-icon {
 		&:before {
 			content:'';
 			display: inline-block;
+			padding-right: 12px;
     		background:url(../images/g-position.png) no-repeat;
     		background-size:14px;
     		width:14px;
-    		height:16px;
+    		height:18px;
+    		vertical-align: middle;
 		}
+	}
+	.cost {
+		display: inline-block;
+		margin: 29.5px 22px 0 0;
 	}
 	.right-arrow {
 		position: absolute;
-    	top: 12px;
-    	left: 20.5px;
-    	border-right: 3px solid #333;
-    	border-bottom: 3px solid #333;
+    	top: 31.5px;
+    	left: 74px;
+    	border-right: 3px solid $blue;
+    	border-bottom: 3px solid $blue;
     	transform: rotate(-45deg);
     	a {
     		display: block;
@@ -139,13 +157,49 @@ main {
     	}
     }
 }
+@media screen and (max-width: 340px) {
+	main .main-content {
+		padding: 15px 10px;
+	}
+}
 
 
 footer {
 	position: fixed;
 	bottom: 0;
+	padding: 0 $width / 5;
 	width: $width;
 	height: 55px;
 	border-top: 1px solid #e2eaec;
+	box-sizing: border-box;
+	text-align: center;
 	background-color: #f8fafb;
+	span {
+		margin-top: 4px;
+		width: 28px;
+		height: inherit;
+		a {
+			display: inline-block;
+		}
+	}
+	.home {
+		width: 26px;
+		height: 23px;
+		background: url(../images/b-home.png) 100% no-repeat;
+		background-size: cover;
+	}
+	.write {
+		display: inline-block;
+		margin: 3px;
+    	width: 50px;
+    	height: 50px;
+		background: url(../images/write.png) 100% no-repeat;
+		background-size: cover;
+	}
+	.person {
+		width: 24px;
+		height: 23px;
+		background: url(../images/person.png) 100% no-repeat;
+		background-size: cover;
+	}
 }

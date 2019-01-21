@@ -47,6 +47,9 @@ button {
 .black-text {
   color: #333; }
 
+.orange-text {
+  color: #e63b0e; }
+
 .font-lg {
   margin: 20px 0 10px;
   font-size: 18px; }
@@ -62,6 +65,9 @@ button {
 
 .right {
   float: right; }
+
+.clearfloat {
+  clear: both; }
 
 body {
   margin: 0;
@@ -110,6 +116,7 @@ menu {
   margin: 0;
   padding: 0;
   width: 100%;
+  height: 40px;
   letter-spacing: -5px; }
   menu ul {
     display: inline-block;
@@ -151,44 +158,87 @@ menu {
       right: 6px;
       width: 1px;
       height: 0;
-      border-width: 6px;
+      border-width: 4px;
       border-style: solid;
       border-color: #afbac0 transparent transparent transparent; }
 
+main .main-content {
+  padding: 15px;
+  border-bottom: 1px solid #e1e5e7;
+  box-sizing: border-box; }
 main span {
   position: relative; }
+main .data {
+  display: inline-block;
+  margin: 8px 0 8px 25px; }
 main .data-icon:before {
   content: '';
   display: inline-block;
+  padding-right: 12px;
   background: url(../images/data.png) no-repeat;
   background-size: 14px;
   width: 14px;
-  height: 16px; }
+  height: 16px;
+  vertical-align: middle; }
 main .g-position-icon:before {
   content: '';
   display: inline-block;
+  padding-right: 12px;
   background: url(../images/g-position.png) no-repeat;
   background-size: 14px;
   width: 14px;
-  height: 16px; }
+  height: 18px;
+  vertical-align: middle; }
+main .cost {
+  display: inline-block;
+  margin: 29.5px 22px 0 0; }
 main .right-arrow {
   position: absolute;
-  top: 12px;
-  left: 20.5px;
-  border-right: 3px solid #333;
-  border-bottom: 3px solid #333;
+  top: 31.5px;
+  left: 74px;
+  border-right: 3px solid #5fc0cd;
+  border-bottom: 3px solid #5fc0cd;
   transform: rotate(-45deg); }
   main .right-arrow a {
     display: block;
     width: 15px;
     height: 15px; }
 
+@media screen and (max-width: 340px) {
+  main .main-content {
+    padding: 15px 10px; } }
 footer {
   position: fixed;
   bottom: 0;
+  padding: 0 20%;
   width: 100%;
   height: 55px;
   border-top: 1px solid #e2eaec;
+  box-sizing: border-box;
+  text-align: center;
   background-color: #f8fafb; }
+  footer span {
+    margin-top: 4px;
+    width: 28px;
+    height: inherit; }
+    footer span a {
+      display: inline-block; }
+  footer .home {
+    width: 26px;
+    height: 23px;
+    background: url(../images/b-home.png) 100% no-repeat;
+    background-size: cover; }
+  footer .write {
+    display: inline-block;
+    margin: 3px;
+    width: 50px;
+    height: 50px;
+    background: url(../images/write.png) 100% no-repeat;
+    background-size: cover; }
+  footer .person {
+    width: 24px;
+    height: 23px;
+    background: url(../images/person.png) 100% no-repeat;
+    background-size: cover; }
 
 /*# sourceMappingURL=12-2.css.map */
