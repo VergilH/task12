@@ -21,6 +21,7 @@ header {
 }
 
 nav {
+	margin-top: 42.5px;
 	padding: 37.5px 0 37.5px 15px;
 	width: $width;
 	height: 170px;
@@ -93,9 +94,9 @@ main {
 }
 
 footer {
-	position: fixed;
-	bottom: 0;
-	padding: 0 15px 30px;
+	position: relative;
+	margin: 50px 0 15px;
+	padding: 0 15px;
 	width: $width;
 	box-sizing: border-box;
 	button {
